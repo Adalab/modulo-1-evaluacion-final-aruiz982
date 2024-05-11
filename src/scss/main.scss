@@ -1,5 +1,7 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
+@import './core/reset';
+@import './core/variables';
+@import './layout/header.scss';
+@import './layout/hero.scss';
+@import './layout/history.scss';
+@import './layout/products.scss';
+@import './layout/footer.scss';

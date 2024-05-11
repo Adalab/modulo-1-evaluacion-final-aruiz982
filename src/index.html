@@ -3,18 +3,80 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Adalab Web Starter Kit</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet" />
+    <title>Módulo 1. Evaluación final</title>
+
+    <!--Roboto Slab-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+    
+    <!--Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+
+
     <link rel="stylesheet" href="./scss/main.scss" />
-    <link rel="icon" href="./images/favicon.png" />
   </head>
 
   <body>
-    <div class="page">
-      <load src="./partials/header.html" title="Bienvenidos a Adalab" />
-      <load src="./partials/main.html" />
-      <load src="./partials/footer.html" />
-    </div>
-    <script src="./js/main.js"></script>
+    <header class="header">
+      <a class="header__link" href="https://adalab.es/"><img class="header__icon" src="./images/ico-menu.svg" alt=""></a>
+    </header>
+    <main class="main">
+      <section class="hero" id="hero">
+        <h1 class="hero__title">comienzos compartidos</h1>
+        <h3 class="hero__subtitle">Todo lo que necesitan para volver al cole con ilusión</h3>
+        <a class="hero__link" href="#products"><img class="hero__icon" src="./images/ico-scroll-down.svg" alt=""></a>
+      </section>
+      <section class="history">
+        <p class="history__before">historias, moda y ropa deportiva</p>
+        <h3 class="history__title">tu tienda de deporte</h3>
+        <p class="history__text">El deporte nos mantiene en forma. Nos mantiene alerta. Nuestra ropa deportiva para hombre y mujer te ofrece las últimas tecnologías, a la altura de tu rendimiento, para que superes tu mejor marca personal.</p>
+        <a href="https://adalab.es/" class="history__link">Comprar</a>
+      </section>
+      <section class="products" id="products">
+        <article class="products__top">
+          <p class="products__top--before">¡Prepáralos con tus marcas favoritas!</p>
+          <h3 class="products__top--title">vuelta al cole</h3>
+        </article>
+        <div class="product__images">
+          <article class="products__item">
+            <img class="products__item--img" src="./images/lpbts-mod05-img01-desk.png" alt="">
+            <p class="products__item--text">Mochilas escolares</p>
+          </article>
+          <article class="products__item">
+            <img class="products__item--img" src="./images/lpbts-mod05-img03-mob.png" alt="">
+            <p class="products__item--text">Estuches</p>
+          </article>
+          <article class="products__item">
+            <img class="products__item--img" src="./images/lpbts-mod05-img04-mob.png" alt="">
+            <p class="products__item--text">Bolsas de deporte</p>
+          </article>
+        </div>
+        <a href="" class="products__link">Empezar ahora</a>
+      </section>
+    </main>
+    <footer class="footer">
+      <a href="#hero"><img class="footer_link" src="./images/ico-arrow.svg" alt=""></a>
+      <div class="footer__elements">
+        <div class="footer__products">
+          <a href="https://adalab.es/" class="footer__products--text">Zapatillas</a>
+          <a href="https://adalab.es/" class="footer__products--text">Ropa</a>
+          <a href="https://adalab.es/" class="footer__products--text">Niño/a</a>
+          <a href="https://adalab.es/" class="footer__products--text">Destacados</a>
+          <a href="https://adalab.es/" class="footer__products--text">Tips</a>
+        </div>
+        <div class="footer__media">
+          <a href="https://adalab.es/" class="footer__media--text">Twitter</a>
+          <a href="https://adalab.es/" class="footer__media--text">Instagram</a>
+          <a href="https://adalab.es/" class="footer__media--text">youtube</a>
+        </div>
+        <div class="footer__copy">
+          <p class="footer__copy--text">&copy; 2023</p>
+          <p class="footer__copy--text">we <span class="footer__copy--text--heart">❤︎</span> run</p>
+        </div>
+      </div>
+    </footer>
   </body>
 </html>

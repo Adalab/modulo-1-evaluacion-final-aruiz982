@@ -1,0 +1,80 @@
+.hero{
+    position: relative;
+    height: 100vh;
+    z-index: 10;
+    margin-top: -47px;
+
+    background-image: url("../../public/images/cover.jpeg");
+    background-size: 820px;
+    background-position: top right;
+    background-repeat: no-repeat;
+
+    @media (min-width:768px) {
+        background-size: cover;
+        background-position: center;
+    }
+
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+    align-items: center;
+
+    color: white;
+}
+
+.hero__title{
+    font-family: "Roboto Slab", serif;
+    font-size: 2rem;
+    font-weight: 600;
+
+    text-align: center;
+    text-transform: uppercase;
+
+    line-height: 3rem;
+
+    @media (min-width: 768px){
+        font-size: 3rem;
+
+        padding-inline: 20%;
+
+        line-height: 4rem;
+    }
+
+    @media (min-width: 1240px){
+        font-size: 3rem;
+
+        padding-inline: 30%;
+
+        line-height: 4rem;
+    }
+}
+
+.hero__subtitle{
+    margin-top: 20px;
+    padding-inline: 10%;
+
+    font-size: 1rem;
+
+    text-align: center;
+
+    @media (min-width: 768px){
+        padding-inline: 30%;
+
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+    }
+}
+
+.hero__link{
+    display: flex;
+    justify-content: center;
+
+    margin-top: 20px;
+    margin-bottom: 40px;
+    padding: 15px;
+
+    border-radius: 50%;
+    background-color: white;
+
+    
+}
