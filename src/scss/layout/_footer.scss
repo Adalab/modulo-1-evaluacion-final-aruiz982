@@ -18,19 +18,35 @@
     }
 }
 
-.footer_link{
+.footer_link {
     display: block;
     margin: auto;
-    transform: translateY(-25px);
-
     padding: 15px;
 
+    transform: translateY(-25px);
+    
     border-radius: 50%;
     background-color: white;
 }
 
+.footer_link:hover {
+    animation-name: movement2;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-in-out;
+}
+
+@keyframes movement2 {
+    0% { transform: translate(-1px, -25px); }
+    25% { transform: translate(2px, -25px); }
+    50% { transform: translate(-2px, -25px); }
+    75% { transform: translate(2px, -25px); }
+    100% { transform: translate(-1px, -25px); }
+}
+
 .footer__products, .footer__media, .footer__copy{
     margin-top: 2rem;
+
+    width: 150px;
 }
 
 .footer__products--text, .footer__media--text, .footer__copy--text{

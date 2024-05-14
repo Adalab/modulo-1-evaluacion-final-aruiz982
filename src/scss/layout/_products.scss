@@ -89,5 +89,16 @@
     text-align: center;
     background-color: #6c933e;
     color: white;
+
+    transition: padding 0.5s;
+    transition-timing-function: ease-in-out;
     
+}
+
+.products__link:hover{
+    padding: 12px 37px;
+
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    background-color: #567531;
+
 }
