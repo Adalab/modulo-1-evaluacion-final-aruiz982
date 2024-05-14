@@ -1,16 +1,7 @@
 .products{
-    display: grid;
-    grid-template-columns: 1fr;
-    justify-items: center;
-
     padding-block: 1.5rem;
 
-    background-color: #d9e4cc;
-
-    @media (min-width: 768px) {
-        grid-template-areas: "title title title" "img img img" "button button button";
-    }
-    
+    background-color: #d9e4cc;    
 }
 
 .product__images{
@@ -23,10 +14,6 @@
 
 .products__top{
     line-height: 1.7rem;
-
-    @media (min-width: 768px) {
-        grid-area: title;
-    }
 }
 
 .products__top--before{
@@ -88,17 +75,19 @@
 }
 
 .products__link{
+    display: block;
+
+    width: fit-content;
     padding: 10px 35px;
     margin-block: 2rem;
+    margin-inline: auto;
 
     border-radius: 22px;
 
+    font-weight: 500;
     text-decoration: none;
+    text-align: center;
     background-color: #6c933e;
     color: white;
-    font-weight: 500;
-
-    @media (min-width: 768px) {
-        grid-area: button;
-    }
+    
 }

@@ -1,13 +1,10 @@
 .hero{
-    position: relative;
     height: 100vh;
-    z-index: 10;
-    margin-top: -47px;
 
     background-image: url("../../public/images/cover.jpeg");
-    background-size: 820px;
-    background-position: top right;
+    background-size: auto 100%;
     background-repeat: no-repeat;
+    background-position: right top;
 
     @media (min-width:768px) {
         background-size: cover;
@@ -16,7 +13,7 @@
 
     display: flex;
     flex-direction: column;
-    justify-content: end;
+    justify-content: flex-end;
     align-items: center;
 
     color: white;
@@ -32,18 +29,19 @@
 
     line-height: 3rem;
 
+    max-width: 250px;
     @media (min-width: 768px){
-        font-size: 3rem;
+        max-width: 50%;
 
-        padding-inline: 20%;
+        font-size: 3rem;
 
         line-height: 4rem;
     }
 
     @media (min-width: 1240px){
-        font-size: 3rem;
+        max-width: 50%;
 
-        padding-inline: 30%;
+        font-size: 3rem;
 
         line-height: 4rem;
     }
@@ -51,16 +49,17 @@
 
 .hero__subtitle{
     margin-top: 20px;
-    padding-inline: 10%;
+    max-width: 80%;
 
     font-size: 1rem;
 
     text-align: center;
 
     @media (min-width: 768px){
-        padding-inline: 30%;
+        max-width: 60%;
 
         font-size: 1.25rem;
+
         line-height: 1.5rem;
     }
 }
@@ -68,6 +67,7 @@
 .hero__link{
     display: flex;
     justify-content: center;
+    align-items: center;
 
     margin-top: 20px;
     margin-bottom: 40px;
